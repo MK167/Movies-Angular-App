@@ -1,0 +1,92 @@
+<!-- <div>
+<ngx-spinner bdColor ="rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff"
+template="<img src='../../../../../assets/1495 (1).gif' />"
+[fullScreen] = "true" [showSpinner]= "true">
+  <p style="color: white" > Loading... </p>
+</ngx-spinner>
+</div> -->
+<ngx-spinner bdColor ="rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+
+<div class="container-login100" style="background-image: url('../../assets/EG-ar-20220214-popsignuptwoweeks-perspective_alpha_website_large.jpg');">
+  <div class="px-4 my-2">
+    <h1 class="my-5 text-center" style="font-weight: bold; color: white;">Unlimited movies, TV shows, and more. <br> Enjoy Your Time</h1>
+
+<form [formGroup]="loginForm" (ngSubmit)="login()" class="LoginForm" >
+  <h2 style="text-align: center; font-weight: bold; color: white;"> Sign In </h2>
+
+  <div class="col-md-9 offset-md-2 mt-5">
+            <div class="form-group">
+                <label>Email</label>
+                <input [class.is-invalid]="f['email'].touched && f['email'].invalid"
+                formControlName="email" type="email"
+                class="form-control mt-1 rounded">
+              <div *ngIf="f['email'].touched && f['email'].invalid" class="alert my-2 ml-2">
+                  <div *ngIf="f['email'].errors && f['email'].errors['required']">Your mail is not valid.</div>
+              </div>
+            </div>
+  </div>
+            <div class="col-md-9 offset-md-2 mt-5">
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input [class.is-invalid]="f['password'].touched && f['password'].invalid" formControlName="password" type="password" class="form-control mt-1 rounded">
+                        <div *ngIf="f['password'].touched && f['password'].invalid"  class="alert my-2 ml-2 ">
+                           Your password is not valid, length must be 8 at least containing char and number
+                       </div>
+                    </div>
+                 </div>
+
+             <div class="col-md-9 offset-md-2 mt-2">
+                <button class="btn btn-info" style="width: 170px; background-color: #E50914; border-color: #E50914;" type="submit">login</button>
+             </div>
+             <p class="text-center my-3">Don't have an account? <a class="text-primary text-decoration-none" routerLink="/register">Sign Up</a></p>
+  </form>
+</div>
+</div>
+
+<div class="row featurette" style="background-color: black; height: 70vh;">
+  <div class="col-md-7" >
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="margin-left: 150px; font-weight: bold;">Enjoy on your TV.</h1>
+    <h2 style="margin-left: 150px;" >Watch on Smart TVs, Playstation, Xbox,<br> Chromecast, Apple TV, Blu-ray players, and more.</h2>
+  </div>
+  <div class="col-md-5">
+    <div>
+      <br>
+      <br>
+      <div style="background-image: url('../../assets/tv.png'); background-repeat: no-repeat; position: absolute;
+      height: 100%;
+      width: 100%;">
+    <video class="our-story-card-video" style="margin-top: 100px; margin-left: 85px; width: 64.5%;" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row featurette" style="background-color: black;">
+  <div class="col-md-5" >
+<img src="../../assets/AAAABdFTpLmANuJpYneLq8L5m7CunMCi8e8Nl4y7xaPVWzG3IeoDoq17egTQAthApKg_4sdRWdwuR8KadWu1frjL3JQImpwq.png">
+
+  </div>
+  <div class="col-md-7">
+    <div>
+      <br>
+      <br>
+      <br>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 style="margin-left: 150px; font-weight: bold;">Create profiles for kids.</h1>
+      <h2 style="margin-left: 150px;" >Send kids on adventures with their favorite characters
+        <br> in a space made just for them—free with your membership.</h2>
+  </div>
+</div>
+</div>
