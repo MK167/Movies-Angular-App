@@ -23,6 +23,8 @@ import { SearchComponent } from './Components/search/search.component';
 import { TVShowsComponent } from './Components/tvshows/tvshows.component';
 import { AboutComponent } from './Components/about/about.component';
 import { DetailsComponent } from './Components/details/details.component';
+import { LoginPageComponent } from './AuthComponent/components/auth-layout/login-page/login-page.component';
+import { RegisterPageComponent } from './AuthComponent/components/auth-layout/register-page/register-page.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { DetailsComponent } from './Components/details/details.component';
     SearchComponent,
     TVShowsComponent,
     AboutComponent,
-    DetailsComponent
+    DetailsComponent,
+
+
   ],
   imports: [
     AppRoutingModule,

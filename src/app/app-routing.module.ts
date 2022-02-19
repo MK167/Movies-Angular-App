@@ -13,6 +13,7 @@ import { PeopleComponent } from './Components/people/people.component';
 import { PersonDetailsComponent } from './Components/person-details/person-details.component';
 import { SearchComponent } from './Components/search/search.component';
 import { TVShowsComponent } from './Components/tvshows/tvshows.component';
+import { AuthLayoutComponent } from './AuthComponent/components/auth-layout/auth-layout.component';
 
 const routes: Routes = [
   {
@@ -51,9 +52,21 @@ const routes: Routes = [
   {
     path: 'networks', component: NetworksComponent, canActivate: [AuthGuard]
   },
+  // If You Need Use Lazy Loading Module Do IT The Below Code The Best Structure of Lazy Loading.
+  //
+  // {
+  //   path: 'auth', component: AuthLayoutComponent, children: [
+  //   {
+  //     path:'',
+  //     loadChildren: () => import('./AuthComponent/auth/auth.module')
+  //     .then(m =>m.AuthModule)
+  //   }
+  //   ]
+  // },
   {
     path: '**', component: NotFoundPageComponent
   }
+
 
 ];
 
